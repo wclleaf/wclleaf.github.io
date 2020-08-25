@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>niushop多商户文档 | 目录结构</title>
+    <meta name="description" content="这个是一个测试文档">
+    
+    
+    <link rel="preload" href="/assets/css/10.styles.5b8306a4.css" as="style"><link rel="preload" href="/assets/js/app.7c1d5bc4.js" as="script"><link rel="preload" href="/assets/js/4.07e9f7f9.js" as="script"><link rel="prefetch" href="/assets/js/0.541274b1.js"><link rel="prefetch" href="/assets/js/1.99c6afdc.js"><link rel="prefetch" href="/assets/js/2.692a14d1.js"><link rel="prefetch" href="/assets/js/3.319213bb.js"><link rel="prefetch" href="/assets/js/5.00dfc4f6.js"><link rel="prefetch" href="/assets/js/6.dd32bb27.js"><link rel="prefetch" href="/assets/js/7.ec74e15f.js"><link rel="prefetch" href="/assets/js/8.f62546d1.js"><link rel="prefetch" href="/assets/js/9.d0fe1371.js">
+    <link rel="stylesheet" href="/assets/css/10.styles.5b8306a4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      niushop多商户文档
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>指南</span><!----></p><ul class="sidebar-group-items"><li><a href="/guide/" class="sidebar-link">开始上手</a></li><li><a href="/guide/directory.html" class="active sidebar-link">目录结构</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/guide/baseconfig.html" class="sidebar-link">基础配置</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>其它</span><!----></p><ul class="sidebar-group-items"><li><a href="/guide/http.html" class="sidebar-link">http请求</a></li><li><a href="/guide/map.html" class="sidebar-link">地图模块</a></li><li><a href="/guide/lang.html" class="sidebar-link">多语言</a></li><li><a href="/guide/global.html" class="sidebar-link">全局属性与全局组件</a></li></ul></div></li></ul></div><div class="page"><div class="content"><h3 id="目录结构"><a href="#目录结构" aria-hidden="true" class="header-anchor">#</a> 目录结构</h3><pre class="language-text"><code>├─common                      &lt;!-- 公共资源 --&gt;
+│  ├─css   //全局字体和全局样式
+│  └─js    //配置、公共方法、mixins、请求...
+│      └─map //地图相关
+├─components                  &lt;!-- 自定义组件和三方组件 --&gt;
+│  
+├─otherpages                  &lt;!-- 其它模块分包 --&gt;
+│  ├─diy        //微页面
+│  │  
+│  ├─fenxiao    //分销模块
+│  │  
+│  ├─goods      //商品模块
+│  │  
+│  ├─discover    //CMS模块
+│  │ 
+│  ├─help      //CMS模块
+│  │  
+│  ├─notice    //CMS模块
+│  │ 
+│  ├─login    //登录模块
+│  │  
+│  ├─member   //会员模块
+│  │
+│  ├─order   //订单
+│  │  
+│  ├─recharge  //会员充值模块
+│  │  
+│  ├─shop         //店铺模块
+│  │
+│  ├─verification  //核销模块
+│  │  
+│  ├─index
+│  │  
+│  └─web
+├─pages                &lt;!-- 主分包-提供信息展示和入口 --&gt;
+│  ├─goods  //商品
+│  │  
+│  ├─index  //首页
+│  │ 
+│  ├─login  //登录
+│  │ 
+│  ├─member //会员
+│  │  
+│  ├─order  //订单
+│  │  
+│  └─pay   //支付
+├─promotionpages         &lt;!-- 营销活动模块分包 --&gt;
+│  ├─bargain   //砍价模块
+│  │  
+│  ├─combo    //组合套餐模块
+│  │ 
+│  ├─game     //小游戏模块
+│  │
+│  ├─groupbuy  //团购模块
+│  │  
+│  ├─pintuan  //拼团模块
+│  │
+│  ├─point    //积分模块
+│  │  
+│  ├─presell   //预售模块
+│  │  
+│  ├─seckill    //秒杀模块
+│  │ 
+│  └─topics    //专题活动模块
+│  │  
+├─store                   &lt;!-- vuex --&gt;
+│  │ 
+├─App.vue                   &lt;!-- 应用级页面 --&gt;
+│  │ 
+├─main.js                   &lt;!-- 入口 --&gt;
+│  │ 
+├─mainifest.js              &lt;!-- 不同平台的基础配置 --&gt;
+│  │ 
+├─page.js                   &lt;!-- 全局样式、路由、分包配置 --&gt;
+│  │
+└─uni.scss                  &lt;!-- 全局scss变量定义处 --&gt;
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/guide/" class="prev router-link-active">
+          开始上手
+        </a></span><span class="next"><a href="/guide/baseconfig.html">
+          基础配置
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/4.07e9f7f9.js" defer></script><script src="/assets/js/app.7c1d5bc4.js" defer></script>
+  </body>
+</html>
